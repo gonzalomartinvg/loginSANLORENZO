@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../images/bg10.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/*Partido*/
+
+.caja__trasera{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(2, 77, 153, 0.5);
+
+}
+
+.caja__trasera-register{
+    width: 40%;
+    margin: 70px 40px;
+    color: white;
+    transition: all 500ms;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    
+}
+
+.contenedor-estado{
+    width: fit-content;
+    padding: 1rem;
+    background-color: #e41a1a;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    justify-self: center;
+    transition: red 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+}
+
+.contenedor-estado-habilitado{
+    width: fit-content;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    justify-self: center;
+    transition: green 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.contenedor-partido{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.contenedor-fecha{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+/*Bienvenida*/
+
+.contenedor-bienvenida{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -170px;
+    left: 10px;
+}
+
+.contenedor-bienvenida form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+.contenedor-bienvenida form h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #024c96;
+}
+
+.contenedor-bienvenida form h3{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #3d3d3d;
+}
+
+.button-habilitar{
+    width: 100%;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: none;
+    font-size: 14px;
+    background: #024c96;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.cerrar-sesion{
+    border: none;
+    background-color: white;
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.contenedor-boton-escudo{
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.escudo{
+    width: 4.5rem;
+}
+
+.escudo2{
+    width: 3.7rem;
+}
+
+@media screen and (max-width: 850px){
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 230px;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .caja__trasera-register{
+        width: 90%;
+        margin: auto;    
+    }
+
+    /*Formularios*/
+
+    .contenedor-bienvenida{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor-bienvenida form{
+        position: relative;
+    }
+}
