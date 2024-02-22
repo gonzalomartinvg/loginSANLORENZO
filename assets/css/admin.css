@@ -25,7 +25,6 @@ main{
     width: 100%;
     max-width: 800px;
     margin: auto;
-    position: relative;
 }
 
 /*Partido*/
@@ -48,7 +47,6 @@ main{
     display: grid;
     grid-gap: 1rem;
     justify-content: center;
-    
 }
 
 .contenedor-estado{
@@ -58,7 +56,6 @@ main{
     color: white;
     font-size: 1rem;
     text-align: center;
-    justify-self: center;
     transition: red 0.5s ease-in-out, color 0.5s ease-in-out;
     
 }
@@ -70,7 +67,6 @@ main{
     color: white;
     font-size: 1rem;
     text-align: center;
-    justify-self: center;
     transition: green 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
@@ -164,28 +160,92 @@ main{
 
 @media screen and (max-width: 850px){
 
-    .caja__trasera{
-        max-width: 350px;
-        height: 230px;
-        flex-direction: column;
+    main{
+        width: 100%;
+        padding: 0px;
         margin: auto;
-        justify-content: center;
+        margin-top: 0px;
+    }
+
+    .contenedor__todo{
+        width: 100%;
+        
+        margin: auto;
+    }
+
+    .caja__trasera{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(2, 77, 153, 0.5);
     }
 
     .caja__trasera-register{
-        width: 90%;
-        margin: auto;    
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        justify-content: stretch;
     }
 
-    /*Formularios*/
+    .contenedor-estado{
+        width: 100%;
+        background-color: #e41a1a;
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+       
+        transition: red 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+    
+    .contenedor-estado-habilitado{
+        width: 100%;
+        background-color: green;
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+       
+        transition: green 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    .contenedor-partido{
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    /*Bienvenida*/
 
     .contenedor-bienvenida{
-        top: -10px;
-        left: -5px;
-        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 85%;
+        max-width: none;
+        position: none;
+        top: 150px;
+        left: 33px;
+
     }
 
     .contenedor-bienvenida form{
-        position: relative;
+        width: 100%;
+        padding: 2rem;
+        grid-gap: 0.8rem;
+    }
+
+    .contenedor-bienvenida form h2{
+        margin-bottom: 0rem;
+    }
+    
+    .contenedor-bienvenida form h3{
+        margin-bottom: 0rem;
+    }
+    
+    .button-habilitar{
+        margin-top: 0px;
+    }
+    
+    .cerrar-sesion{ 
+        margin-top: 1rem;
     }
 }

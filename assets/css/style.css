@@ -156,7 +156,7 @@ main{
 @media screen and (max-width: 850px){
 
     main{
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .caja__trasera{
@@ -168,14 +168,12 @@ main{
 
     .caja__trasera div{
         margin: 0px;
-        position: absolute;
     }
-
 
     /*Formularios*/
 
     .contenedor__login-register{
-        top: -10px;
+        top: 10px;
         left: -5px;
         margin: auto;
     }
