@@ -44,4 +44,4 @@ var caja_trasera_register = document.querySelector(".caja__trasera-register");
         }
 }
 
-register();
+iniciarSesion();
